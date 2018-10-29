@@ -85,7 +85,7 @@ public class MainRouteUS81 extends RouteBuilder {
 		
 		.process(new SAPTitleFileGenerationProcessor())
 		.setBody(simple("${header.fileHeader}${body}${header.fileFooter}"))
-		.wireTap("file:{{file.backup.location}}/2.0 SentToSAP?fileName=${date:now:yyyy/MM/dd/}$simple{header.DestinationFileName}_$simple{header.RequestReceivedTime}.dat")
+		.wireTap("file:{{file.backup.location}}/2.0 SentToStar?fileName=${date:now:yyyy/MM/dd/}$simple{header.DestinationFileName}_$simple{header.RequestReceivedTime}.dat")
 		.choice()
 			.when(header("Region").isEqualTo("UK"))
 				/*.toD("ftp:{{ftp.uk.server}}:{{ftp.uk.port}}{{ftp.uk.drop.location}}?FileName=$simple{header.DestinationFileName}.dat&doneFileName=$simple{header.DestinationFileName}.go&password={{ftp.uk.password}}&username={{ftp.uk.username}}&passiveMode=true")*/
@@ -93,7 +93,7 @@ public class MainRouteUS81 extends RouteBuilder {
 				.toD("ftp:{{ftp.us.server}}:{{ftp.us.port}}{{ftp.us.drop.location}}?FileName=$simple{header.DestinationFileName}.dat&doneFileName=$simple{header.DestinationFileName}.go&password={{ftp.us.password}}&username={{ftp.us.username}}&passiveMode=true")
 		.end()
 		.log(LoggingLevel.INFO, "com.oup.sps", "${header.InterfaceFullName} file ${header.DestinationFileName} generated")
-		.to("direct:UpdateFirstCostsSequenceNumber")
+		.to("direct:UpdateStarSequenceNumber")
 		.log(LoggingLevel.INFO, "com.oup.sps", "${header.InterfaceFullName} Sequence number updated");
 			
 }

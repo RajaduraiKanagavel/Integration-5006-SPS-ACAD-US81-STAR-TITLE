@@ -989,4 +989,58 @@ public void setAdditionalProperty(String name, Object value) {
 this.additionalProperties.put(name, value);
 }
 
+public StarTitleMasterDataBiblioUS81(
+		)
+{
+	super();
+	
+}; 
+
+public StarTitleMasterDataBiblioUS81(String productISBN, Double statusLevel, String fullTitle, String subTitle,
+		String editionNumber, Double noOfVolumes, Boolean newInPaperbackFlag, String formatDescription,
+		String oxfordSubjectCode, String referenceSubject, String additionalReferenceSubject,
+		String onlineProductSubjectCode, String onlineProductSubjectDescription, String audienceCode,
+		String audienceDescription, String editorName, Double printRun, String authorBigraphy, Double copyrightYear,
+		String seriesCode, String seriesName, Boolean readyForPDBMAIN, String previousEditionPubDate1,
+		String previousEditionPubDate2, String previousEditionPubDate3, String institutionalAccess,
+		String retailMarketApproval, String previewOrSearch, String workID, String productRelationCode,
+		String memberOfOnlineProductCode) {
+	super();
+	this.productISBN = productISBN;
+	this.statusLevel = statusLevel;
+	this.fullTitle = fullTitle;
+	this.subTitle = subTitle;
+	this.editionNumber = editionNumber;
+	this.noOfVolumes = noOfVolumes;
+	this.newInPaperbackFlag = newInPaperbackFlag;
+	this.formatDescription = formatDescription;
+	this.oxfordSubjectCode = oxfordSubjectCode;
+	this.referenceSubject = referenceSubject;
+	this.additionalReferenceSubject = additionalReferenceSubject;
+	this.onlineProductSubjectCode = onlineProductSubjectCode;
+	this.onlineProductSubjectDescription = onlineProductSubjectDescription;
+	this.audienceCode = audienceCode;
+	this.audienceDescription = audienceDescription;
+	this.editorName = editorName;
+	this.printRun = printRun;
+	this.authorBigraphy = authorBigraphy;
+	this.copyrightYear = copyrightYear;
+	this.seriesCode = seriesCode;
+	this.seriesName = seriesName;
+	this.readyForPDBMAIN = readyForPDBMAIN;
+	this.previousEditionPubDate1 = previousEditionPubDate1;
+	this.previousEditionPubDate2 = previousEditionPubDate2;
+	this.previousEditionPubDate3 = previousEditionPubDate3;
+	this.institutionalAccess = institutionalAccess;
+	this.retailMarketApproval = retailMarketApproval;
+	this.previewOrSearch = previewOrSearch;
+	this.workID = workID;
+	this.productRelationCode = productRelationCode;
+	this.memberOfOnlineProductCode = memberOfOnlineProductCode;
+	
+}
+
+
+
+
 }
