@@ -1,0 +1,229 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://oup.com/sps/usstartitleexport.json",
+	"type": "array",
+	"items": {
+		"$id": "http://oup.com/sps/usstartitleexport.json/items",
+		"type": "object",
+		"properties": {
+			"productISBN": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/productISBN",
+				"type": "string",
+				"title": "Product ISBN",
+				"default": "",
+				"examples": ["9782314569632"],
+				"maxLength": 18
+			},
+			"statusLevel": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/statusLevel",
+				"type": "number",
+				"title": "statusLevel",
+				"default": "",
+				"examples": ["18"]
+			},
+			"fullTitle": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/fullTitle",
+				"type": "string",
+				"title": "fullTitle",
+				"default": "",
+				"examples": ["The Lupus Book"]
+			},
+			"subTitle": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/subTitle",
+				"type": "string",
+				"title": "subTitle",
+				"default": "",
+				"examples": ["A Guide for Patients and Their Families"]
+			},
+			"editionNumber": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/editionNumber",
+				"type": "number",
+				"title": "editionNumber",
+				"default": "",
+				"examples": ["06"]
+			},
+			"noOfVolumes": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/noOfVolumes",
+				"type": "number",
+				"title": "noOfVolumes",
+				"default": "",
+				"examples": ["10"]
+			},
+			"newInPaperbackFlag": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/newInPaperbackFlag",
+				"type": "boolean",
+				"title": "newInPaperbackFlag",
+				"default": "",
+				"examples": ["false"]
+			},
+			"formatDescription": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/formatDescription",
+				"type": "string",
+				"title": "formatDescription",
+				"default": "",
+				"examples": ["6-1/8 x 9-1/4"]
+			},
+			"oxfordSubjectCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/oxfordSubjectCode",
+				"type": "string",
+				"title": "oxfordSubjectCode",
+				"default": "",
+				"examples": ["MED022000"]
+			},
+			"referenceSubject": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/referenceSubject",
+				"type": "string",
+				"title": "referenceSubject",
+				"default": "",
+				"examples": ["MED035000"]
+			},
+			"additionalReferenceSubject": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/additionalReferenceSubject",
+				"type": "string",
+				"title": "additionalReferenceSubject",
+				"default": "",
+				"examples": ["PSY002000"]
+			},
+			"onlineProductSubjectCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/onlineProductSubjectCode",
+				"type": "string",
+				"title": "onlineProductSubjectCode",
+				"default": "",
+				"examples": ["SPSY"]
+			},
+			"onlineProductSubjectDescription": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/onlineProductSubjectDescription",
+				"type": "string",
+				"title": "onlineProductSubjectDescription",
+				"default": "",
+				"examples": ["Psychology"]
+			},
+			"audienceCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/audienceCode",
+				"type": "string",
+				"title": "audienceCode",
+				"default": "",
+				"examples": ["06"]
+			},
+			"audienceDescription": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/audienceDescription",
+				"type": "string",
+				"title": "audienceDescription",
+				"default": "",
+				"examples": ["Professional & Scholarly"]
+			},
+			"editorName": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/editorName",
+				"type": "string",
+				"title": "editorName",
+				"default": "",
+				"examples": ["VELINOV, Phil"]
+			},
+			"printRun": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/printRun",
+				"type": "number",
+				"title": "printRun",
+				"default": "",
+				"examples": ["650"]
+			},
+			"authorBigraphy": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/authorBigraphy",
+				"type": "string",
+				"title": "authorBigraphy",
+				"default": "",
+				"examples": ["Department of Psychology, University of British Columbia"]
+			},
+			"copyrightYear": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/copyrightYear",
+				"type": "number",
+				"title": "copyrightYear",
+				"default": "",
+				"examples": ["0"]
+			},
+			"seriesCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/seriesCode",
+				"type": "string",
+				"title": "seriesCode",
+				"default": "",
+				"examples": ["OCD"]
+			},
+			"seriesName": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/seriesName",
+				"type": "string",
+				"title": "seriesName",
+				"default": "",
+				"examples": ["Oxford Series in Cognitive Development"]
+			},
+			"readyForPDBMAIN": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/readyForPDBMAIN",
+				"type": "boolean",
+				"title": "readyForPDBMAIN",
+				"default": "",
+				"examples": ["false"]
+			},
+			"previousEditionPubDate1": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/previousEditionPubDate1",
+				"type": "string",
+				"title": "previousEditionPubDate1 : MM/DD/YYYY",
+				"default": "",
+				"examples": ["07/01/2014"]
+			},
+			"previousEditionPubDate2": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/previousEditionPubDate2",
+				"type": "string",
+				"title": "previousEditionPubDate2: MM/DD/YYYY",
+				"default": "",
+				"examples": ["07/21/2011"]
+			},
+			"previousEditionPubDate3": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/previousEditionPubDate3",
+				"type": "string",
+				"title": "previousEditionPubDate3: MM/DD/YYYY",
+				"default": "",
+				"examples": ["10/10/2008"]
+			},
+			"institutionalAccess": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/institutionalAccess",
+				"type": "string",
+				"title": "institutionalAccess",
+				"default": "",
+				"examples": ["Single User"]
+			},
+			"retailMarketApproval": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/retailMarketApproval",
+				"type": "boolean",
+				"title": "retailMarketApproval",
+				"default": "",
+				"examples": ["true"]
+			},
+			"previewOrSearch": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/previewOrSearch",
+				"type": "boolean",
+				"title": "previewOrSearch",
+				"default": "",
+				"examples": ["true"]
+			},
+			"workID": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/workID",
+				"type": "string",
+				"title": "workID",
+				"default": "",
+				"examples": ["CALB0TBPOE"]
+			},
+			"productRelationCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/productRelationCode",
+				"type": "string",
+				"title": "productRelationCode",
+				"default": "",
+				"examples": ["8"]
+			},
+			"memberOfOnlineProductCode": {
+				"$id": "http://oup.com/sps/usstartitleexport.json/items/properties/memberOfOnlineProductCode",
+				"type": "string",
+				"title": "memberOfOnlineProductCode",
+				"default": "",
+				"examples": ["OHO"]
+			}
+		}
+	}
+}

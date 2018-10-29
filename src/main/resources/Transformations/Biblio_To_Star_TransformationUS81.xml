@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping https://dozermapper.github.io/schema/bean-mapping.xsd">
+    <configuration>
+        <wildcard>false</wildcard>
+    </configuration>
+    <mapping>
+        <class-a>com.oup.integration.sps.acad.titlemaster.biblio.pojo.StarTitleMasterDataBiblioUS81</class-a>
+        <class-b>com.oup.integration.sps.acad.titlemaster.star.pojo.StarTitleMasterDataUS81</class-b>
+        <field>
+            <a>productISBN</a>
+            <b>productISBN</b>
+        </field>
+        <field>
+            <a>statusLevel</a>
+            <b>statusLevel</b>
+        </field>
+        <field>
+            <a>fullTitle</a>
+            <b>fullTitle</b>
+        </field>
+        <field>
+            <a>subTitle</a>
+            <b>subTitle</b>
+        </field>
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,wordOrdinal">
+            <a>editionNumber</a>
+            <b>editionNumber</b>
+        </field>
+        <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,digitOrdinal">
+            <a>editionNumber</a>
+            <b>editionNumber2</b>
+        </field>
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefix">
+            <a>editionNumber</a>
+            <b>editionNumber3</b>
+        </field>
+        <field>
+            <a>noOfVolumes</a>
+            <b>noOfVolumes</b>
+        </field>
+         <field >
+            <a>newInPaperbackFlag</a>
+            <b>newInPaperbackFlag</b>
+        </field>
+         <field>
+            <a>formatDescription</a>
+            <b>formatDescription</b>
+        </field>
+         <field>
+            <a>oxfordSubjectCode</a>
+            <b>oxfordSubjectCode</b>
+        </field>
+         <field>
+            <a>referenceSubject</a>
+            <b>referenceSubject</b>
+        </field>
+         <field>
+            <a>additionalReferenceSubject</a>
+            <b>additionalReferenceSubject</b>
+        </field>
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
+            <a>onlineProductSubjectCode</a>
+            <b>onlineProductSubjectCode</b>
+        </field>
+         <field>
+            <a>onlineProductSubjectDescription</a>
+            <b>onlineProductSubjectDescription</b>
+        </field>
+         <field>
+            <a>audienceCode</a>
+            <b>audienceCode</b>
+        </field>
+        <field  custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
+            <a>audienceDescription</a>
+            <b>audienceDescription</b>
+        </field>
+         <field>
+            <a>editorName</a>
+            <b>editorName</b>
+        </field>
+         <field>
+            <a>printRun</a>
+            <b>printRun</b>
+        </field>
+         <field>
+            <a>authorBigraphy</a>
+            <b>authorBigraphy</b>
+        </field>
+         <field>
+            <a>copyrightYear</a>
+            <b>copyrightYear</b>
+        </field>
+         <field >
+            <a>seriesCode</a>
+            <b>seriesCode</b>
+        </field>
+         <field>
+            <a>seriesName</a>
+            <b>seriesName</b>
+        </field>
+         <field >
+            <a>readyForPDBMAIN</a>
+            <b>readyForPDBMAIN</b>
+        </field>
+         <field>
+            <a>previousEditionPubDate1</a>
+            <b>previousEditionPubDate1</b>
+        </field>
+        <field >
+            <a>previousEditionPubDate2</a>
+            <b>previousEditionPubDate2</b>
+        </field>
+        <field>
+            <a>previousEditionPubDate3</a>
+            <b>previousEditionPubDate3</b>
+        </field>
+       <field>
+            <a>institutionalAccess</a>
+            <b>institutionalAccess</b>
+        </field>
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.BooleanCustomConverter,stringToBoolean1">
+            <a>retailMarketApproval</a>
+            <b>retailMarketApproval</b>
+        </field>
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.BooleanCustomConverter,stringToBoolean1">
+            <a>previewOrSearch</a>
+            <b>previewOrSearch</b>
+        </field>
+         <field >
+            <a>workID</a>
+            <b>workID</b>
+        </field>
+         <field>
+            <a>productRelationCode</a>
+            <b>productRelationCode</b>
+        </field>
+         <field>
+            <a>memberOfOnlineProductCode</a>
+            <b>memberOfOnlineProductCode</b>
+        </field>
+        
+    </mapping>
+</mappings>
