@@ -20,6 +20,14 @@ eureka:
 activemq:
     us:
       queuename: queue:SPS-ACAD-US-US81-STAR-TITLE-MASTER-DEV
+      corntab:
+        timezone: US/Hawaii
+        starttime: 0 01 00 ? * * *
+        stoptime: 0 59 23 ? * * *
+scheduler:
+   route:
+     autoStartup: true
+     completionTimeout: 10000
 
 file:
   backup:
@@ -57,6 +65,14 @@ spring:
 activemq:
     us:
       queuename: queue:SPS-ACAD-US-US81-STAR-TITLE-MASTER-DEV
+      corntab:
+        timezone: US/Hawaii
+        starttime: 0 01 00 ? * * *
+        stoptime: 0 59 23 ? * * *
+scheduler:
+   route:
+     autoStartup: true
+     completionTimeout: 10000
       
 file:
   backup:
@@ -100,8 +116,16 @@ spring:
     password: servicemix@1234
   
 activemq:
-    uk:
+    us:
       queuename: queue:SPS-ACAD-US-US81-STAR-TITLE-MASTER-QA
+      corntab:
+        starttime: 0 01 00 ? * * *
+        stoptime: 0 59 23 ? * * *
+        
+scheduler:
+   route:
+     autoStartup: true
+     completionTimeout: 10000
         
 file:
   backup:

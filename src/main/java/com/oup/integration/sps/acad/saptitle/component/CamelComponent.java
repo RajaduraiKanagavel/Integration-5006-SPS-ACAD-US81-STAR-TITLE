@@ -1,10 +1,14 @@
 package com.oup.integration.sps.acad.saptitle.component;
 
+import org.apache.camel.dataformat.bindy.csv.BindyCsvDataFormat;
 import org.apache.camel.routepolicy.quartz.CronScheduledRoutePolicy;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
+
 
 @Configuration
 public class CamelComponent {
@@ -34,5 +38,10 @@ public class CamelComponent {
 		}
 		return cronScheduledRoutePolicy;
 	}
+
+  
+	
+	
+	
 
 }

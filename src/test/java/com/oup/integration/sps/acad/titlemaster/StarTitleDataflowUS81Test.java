@@ -93,7 +93,7 @@ public class StarTitleDataflowUS81Test {
 		fakeFtpServer.addUserAccount(userAccount);
 		fakeFtpServer.start();
 
-		camelContext.getRouteDefinition("StarTitleSchedulerRouteUS").autoStartup(true).routePolicyRef(null);
+		camelContext.getRouteDefinition("StarRouteUS81").autoStartup(true).routePolicyRef(null);
 		camelContext.start();
 	}
 
