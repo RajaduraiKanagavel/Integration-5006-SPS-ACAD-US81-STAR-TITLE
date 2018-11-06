@@ -29,7 +29,7 @@
 
 		<!-- properties used for creating a docker container -->
 		<docker-host>http://localhost:2375</docker-host>
-		<docker-image-name>SPS_ACAD_US81_STAR_TITLE</docker-image-name>
+		<docker-image-name>sps_acad_us81_star_title</docker-image-name>
 	</properties>
 
 	<dependencies>
