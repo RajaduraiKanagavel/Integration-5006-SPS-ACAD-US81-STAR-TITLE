@@ -101,7 +101,7 @@ private Double noOfVolumes;
 * 
 */
 @JsonProperty("newInPaperbackFlag")
-private Boolean newInPaperbackFlag;
+private String newInPaperbackFlag;
 /**
 * formatDescription
 * <p>
@@ -221,7 +221,7 @@ private String seriesName = "";
 * 
 */
 @JsonProperty("readyForPDBMAIN")
-private Boolean readyForPDBMAIN;
+private String readyForPDBMAIN;
 /**
 * previousEditionPubDate1 : MM/DD/YYYY
 * <p>
@@ -436,7 +436,7 @@ this.noOfVolumes = noOfVolumes;
 * 
 */
 @JsonProperty("newInPaperbackFlag")
-public Boolean getNewInPaperbackFlag() {
+public String getNewInPaperbackFlag() {
 return newInPaperbackFlag;
 }
 
@@ -447,7 +447,7 @@ return newInPaperbackFlag;
 * 
 */
 @JsonProperty("newInPaperbackFlag")
-public void setNewInPaperbackFlag(Boolean newInPaperbackFlag) {
+public void setNewInPaperbackFlag(String newInPaperbackFlag) {
 this.newInPaperbackFlag = newInPaperbackFlag;
 }
 
@@ -766,7 +766,7 @@ this.seriesName = seriesName;
 * 
 */
 @JsonProperty("readyForPDBMAIN")
-public Boolean getReadyForPDBMAIN() {
+public String getReadyForPDBMAIN() {
 return readyForPDBMAIN;
 }
 
@@ -777,7 +777,7 @@ return readyForPDBMAIN;
 * 
 */
 @JsonProperty("readyForPDBMAIN")
-public void setReadyForPDBMAIN(Boolean readyForPDBMAIN) {
+public void setReadyForPDBMAIN(String readyForPDBMAIN) {
 this.readyForPDBMAIN = readyForPDBMAIN;
 }
 
@@ -997,11 +997,11 @@ public StarTitleMasterDataBiblioUS81(
 }; 
 
 public StarTitleMasterDataBiblioUS81(String productISBN, Double statusLevel, String fullTitle, String subTitle,
-		String editionNumber, Double noOfVolumes, Boolean newInPaperbackFlag, String formatDescription,
+		String editionNumber, Double noOfVolumes, String newInPaperbackFlag, String formatDescription,
 		String oxfordSubjectCode, String referenceSubject, String additionalReferenceSubject,
 		String onlineProductSubjectCode, String onlineProductSubjectDescription, String audienceCode,
 		String audienceDescription, String editorName, Double printRun, String authorBigraphy, Double copyrightYear,
-		String seriesCode, String seriesName, Boolean readyForPDBMAIN, String previousEditionPubDate1,
+		String seriesCode, String seriesName, String readyForPDBMAIN, String previousEditionPubDate1,
 		String previousEditionPubDate2, String previousEditionPubDate3, String institutionalAccess,
 		String retailMarketApproval, String previewOrSearch, String workID, String productRelationCode,
 		String memberOfOnlineProductCode) {

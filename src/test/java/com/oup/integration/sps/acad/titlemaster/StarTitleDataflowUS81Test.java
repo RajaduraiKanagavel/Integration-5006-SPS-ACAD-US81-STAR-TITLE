@@ -104,11 +104,11 @@ public class StarTitleDataflowUS81Test {
 
 		List<StarTitleMasterDataBiblioUS81> inputList = new ArrayList<>();
 		inputList.add(new StarTitleMasterDataBiblioUS81("productISBN", d,  "fullTitle",  "subTitle",
-				 "101",  d,  true,  "formatDescription",
+				 "101",  d,  "true",  "formatDescription",
 				 "oxfordSubjectCode", " referenceSubject", " additionalReferenceSubject",
 				 "onlineProductSubjectCode",  "onlineProductSubjectDescription", " audienceCode",
 				 "audienceDescription",  "editorName",  55.5, " authorBigraphy",  d,
-				 "seriesCode",  "seriesName",  true, " previousEditionPubDate1",
+				 "seriesCode",  "seriesName",  "true", " previousEditionPubDate1",
 				 "previousEditionPubDate2",  "previousEditionPubDate3", " institutionalAccess",
 				 "retailMarketApproval",  "previewOrSearch", " workID",  "productRelationCode",
 				 "memberOfOnlineProductCode") );

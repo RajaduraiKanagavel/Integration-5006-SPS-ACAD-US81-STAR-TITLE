@@ -125,7 +125,7 @@ private Double noOfVolumes;
 */
 @DataField(pos=9, trim=true)
 @JsonProperty("newInPaperbackFlag")
-private Boolean newInPaperbackFlag;
+private String newInPaperbackFlag;
 /**
 * formatDescription
 * <p>
@@ -260,7 +260,7 @@ private String seriesName = "";
 */
 @DataField(pos=24, trim=true)
 @JsonProperty("readyForPDBMAIN")
-private Boolean readyForPDBMAIN;
+private String readyForPDBMAIN;
 /**
 * previousEditionPubDate1 : MM/DD/YYYY
 * <p>
@@ -503,7 +503,7 @@ this.noOfVolumes = noOfVolumes;
 * 
 */
 @JsonProperty("newInPaperbackFlag")
-public Boolean getNewInPaperbackFlag() {
+public String getNewInPaperbackFlag() {
 return newInPaperbackFlag;
 }
 
@@ -514,7 +514,7 @@ return newInPaperbackFlag;
 * 
 */
 @JsonProperty("newInPaperbackFlag")
-public void setNewInPaperbackFlag(Boolean newInPaperbackFlag) {
+public void setNewInPaperbackFlag(String newInPaperbackFlag) {
 this.newInPaperbackFlag = newInPaperbackFlag;
 }
 
@@ -833,7 +833,7 @@ this.seriesName = seriesName;
 * 
 */
 @JsonProperty("readyForPDBMAIN")
-public Boolean getReadyForPDBMAIN() {
+public String getReadyForPDBMAIN() {
 return readyForPDBMAIN;
 }
 
@@ -844,7 +844,7 @@ return readyForPDBMAIN;
 * 
 */
 @JsonProperty("readyForPDBMAIN")
-public void setReadyForPDBMAIN(Boolean readyForPDBMAIN) {
+public void setReadyForPDBMAIN(String readyForPDBMAIN) {
 this.readyForPDBMAIN = readyForPDBMAIN;
 }
 
