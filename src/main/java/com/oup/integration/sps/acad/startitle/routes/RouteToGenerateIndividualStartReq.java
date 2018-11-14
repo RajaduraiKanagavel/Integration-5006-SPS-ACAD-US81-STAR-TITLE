@@ -1,11 +1,11 @@
-package com.oup.integration.sps.acad.titlemaster.routes;
+package com.oup.integration.sps.acad.startitle.routes;
 
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
 import org.dozer.MappingException;
 import org.springframework.stereotype.Component;
 
-import com.oup.integration.sps.acad.titlemaster.star.pojo.StarTitleMasterDataUS81;
+import com.oup.integration.sps.acad.startitle.star.pojo.StarTitleMasterDataUS81;
 
 @Component
 public class RouteToGenerateIndividualStartReq extends RouteBuilder {
@@ -40,7 +40,7 @@ public class RouteToGenerateIndividualStartReq extends RouteBuilder {
 
 				})*/
 
-				.to("dozer:Biblio_Star_Transformationus81?sourceModel=com.oup.integration.sps.acad.titlemaster.biblio.pojo.StarTitleMasterDataBiblioUS81&targetModel=com.oup.integration.sps.acad.titlemaster.star.pojo.StarTitleMasterDataUS81&mappingFile=Transformations/Biblio_To_Star_TransformationUS81.xml");
+				.to("dozer:Biblio_Star_Transformationus81?sourceModel=com.oup.integration.sps.acad.startitle.biblio.pojo.StarTitleMasterDataBiblioUS81&targetModel=com.oup.integration.sps.acad.startitle.star.pojo.StarTitleMasterDataUS81&mappingFile=Transformations/Biblio_To_Star_TransformationUS81.xml");
 
 	}
 

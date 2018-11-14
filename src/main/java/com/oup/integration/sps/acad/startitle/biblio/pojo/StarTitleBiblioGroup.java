@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster.biblio.pojo;
+package com.oup.integration.sps.acad.startitle.biblio.pojo;
 
 import java.util.ArrayList;
 

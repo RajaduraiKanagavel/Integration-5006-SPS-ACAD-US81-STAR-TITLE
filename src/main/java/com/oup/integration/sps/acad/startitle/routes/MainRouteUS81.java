@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster.routes;
+package com.oup.integration.sps.acad.startitle.routes;
 
 import java.io.IOException;
 import java.nio.file.FileAlreadyExistsException;
@@ -14,12 +14,10 @@ import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.google.gson.JsonSyntaxException;
-
-import com.oup.integration.sps.acad.titlemaster.processor.SAPTitleFileGenerationProcessor;
-
-import com.oup.integration.sps.acad.titlemaster.biblio.pojo.StarTitleBiblioGroup;
-import com.oup.integration.sps.acad.titlemaster.processor.StarFileProcessor;
-import com.oup.integration.sps.acad.titlemaster.star.pojo.StarTitleMasterDataUS81;
+import com.oup.integration.sps.acad.startitle.biblio.pojo.StarTitleBiblioGroup;
+import com.oup.integration.sps.acad.startitle.processor.SAPTitleFileGenerationProcessor;
+import com.oup.integration.sps.acad.startitle.processor.StarFileProcessor;
+import com.oup.integration.sps.acad.startitle.star.pojo.StarTitleMasterDataUS81;
 
 
 
@@ -53,7 +51,7 @@ public class MainRouteUS81 extends RouteBuilder {
 			.to("file:{{file.backup.location}}/Error?fileName=${date:now:yyyy/MM/dd/}$simple{property.ReceivedFileName}_$simple{header.RequestReceivedTime}.txt")
 			.handled(true);
 		
-		from("direct:ReceivedStarTitleAggregatedMessage")
+		from("seda:ReceivedStarTitleAggregatedMessage")
 		.routeId("mainRouteForStarTitle")
 		.log(LoggingLevel.INFO, "com.oup.sps", "Received Aggregated ${header.InterfaceFullName} Message ${body}")
 		.setProperty("InputBody", simple("${body}"))
@@ -79,7 +77,7 @@ public class MainRouteUS81 extends RouteBuilder {
 			.to("direct:transform_titledata_biblio_to_star")
 		.end()
 		
-		.log(LoggingLevel.INFO, "com.oup.sps", "Debug 9999 : ${body}")
+		
 		.marshal(bindy)
 		.log(LoggingLevel.INFO, "com.oup.sps", "Generated CSV message for ${header.InterfaceFullName} interface : ${body}")
 		

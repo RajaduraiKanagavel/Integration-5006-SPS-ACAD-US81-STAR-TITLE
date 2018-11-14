@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster;
+package com.oup.integration.sps.acad.startitle;
 
 import java.util.Locale;
 import java.util.regex.Pattern;

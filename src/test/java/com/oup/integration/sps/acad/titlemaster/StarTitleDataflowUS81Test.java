@@ -39,8 +39,7 @@ import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.util.ResourceUtils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import com.oup.integration.sps.acad.titlemaster.biblio.pojo.StarTitleMasterDataBiblioUS81;
+import com.oup.integration.sps.acad.startitle.biblio.pojo.StarTitleMasterDataBiblioUS81;
 
 @RunWith(CamelSpringBootRunner.class)
 //@RunWith(CamelSpringBootJUnit4ClassRunner.class) 

@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster.processor;
+package com.oup.integration.sps.acad.startitle.processor;
 
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;

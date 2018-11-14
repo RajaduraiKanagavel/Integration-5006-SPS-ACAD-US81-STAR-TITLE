@@ -4,8 +4,8 @@
         <wildcard>false</wildcard>
     </configuration>
     <mapping>
-        <class-a>com.oup.integration.sps.acad.titlemaster.biblio.pojo.StarTitleMasterDataBiblioUS81</class-a>
-        <class-b>com.oup.integration.sps.acad.titlemaster.star.pojo.StarTitleMasterDataUS81</class-b>
+        <class-a>com.oup.integration.sps.acad.startitle.biblio.pojo.StarTitleMasterDataBiblioUS81</class-a>
+        <class-b>com.oup.integration.sps.acad.startitle.star.pojo.StarTitleMasterDataUS81</class-b>
         <field>
             <a>productISBN</a>
             <b>productISBN</b>
@@ -22,15 +22,15 @@
             <a>subTitle</a>
             <b>subTitle</b>
         </field>
-         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,wordOrdinal">
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.NumberFormatCustomConverter,wordOrdinal">
             <a>editionNumber</a>
             <b>editionNumber</b>
         </field>
-        <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,digitOrdinal">
+        <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.NumberFormatCustomConverter,digitOrdinal">
             <a>editionNumber</a>
             <b>editionNumber2</b>
         </field>
-         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefix">
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.NumberFormatCustomConverter,appendPrefix">
             <a>editionNumber</a>
             <b>editionNumber3</b>
         </field>
@@ -58,7 +58,7 @@
             <a>additionalReferenceSubject</a>
             <b>additionalReferenceSubject</b>
         </field>
-         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
             <a>onlineProductSubjectCode</a>
             <b>onlineProductSubjectCode</b>
         </field>
@@ -70,7 +70,7 @@
             <a>audienceCode</a>
             <b>audienceCode</b>
         </field>
-        <field  custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
+        <field  custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.NumberFormatCustomConverter,appendPrefixPsychology">
             <a>audienceDescription</a>
             <b>audienceDescription</b>
         </field>
@@ -118,11 +118,11 @@
             <a>institutionalAccess</a>
             <b>institutionalAccess</b>
         </field>
-         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.BooleanCustomConverter,stringToBoolean1">
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.BooleanCustomConverter,stringToBoolean1">
             <a>retailMarketApproval</a>
             <b>retailMarketApproval</b>
         </field>
-         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.titlemaster.dozar.converters.BooleanCustomConverter,stringToBoolean1">
+         <field custom-converter-id="_customMapping" custom-converter-param="com.oup.integration.sps.acad.startitle.dozar.converters.BooleanCustomConverter,stringToBoolean1">
             <a>previewOrSearch</a>
             <b>previewOrSearch</b>
         </field>

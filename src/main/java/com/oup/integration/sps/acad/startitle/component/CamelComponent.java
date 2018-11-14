@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.saptitle.component;
+package com.oup.integration.sps.acad.startitle.component;
 
 import org.apache.camel.dataformat.bindy.csv.BindyCsvDataFormat;
 import org.apache.camel.routepolicy.quartz.CronScheduledRoutePolicy;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class CamelComponent {
 
-	@Bean("startPolicyUK")
+/*	@Bean("startPolicyUK")
 	public CronScheduledRoutePolicy startPolicyUK(@Value("${activemq.uk.corntab.timezone:#{null}}") String timeZone,
 			@Value("${activemq.uk.corntab.starttime}") String routeStartTime,
 			@Value("${activemq.uk.corntab.stoptime}") String routeStopTime) {
@@ -24,7 +24,7 @@ public class CamelComponent {
 			cronScheduledRoutePolicy.setTimeZone(timeZone);
 		}
 		return cronScheduledRoutePolicy;
-	}
+	}*/
 
 	@Bean("startPolicyUS")
 	public CronScheduledRoutePolicy startPolicyUS(@Value("${activemq.us.corntab.timezone:#{null}}") String timeZone,

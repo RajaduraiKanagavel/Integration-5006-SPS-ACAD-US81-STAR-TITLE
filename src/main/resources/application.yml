@@ -67,8 +67,8 @@ activemq:
       queuename: queue:SPS-ACAD-US-US81-STAR-TITLE-MASTER-DEV
       corntab:
         timezone: US/Hawaii
-        starttime: 0 01 00 ? * * *
-        stoptime: 0 59 23 ? * * *
+        starttime: 0 0,10,20,30,40,50 * * * ? *
+        stoptime: 0 9,19,29,39,49,59 * * * ? *
 scheduler:
    route:
      autoStartup: true
@@ -119,8 +119,8 @@ activemq:
     us:
       queuename: queue:SPS-ACAD-US-US81-STAR-TITLE-MASTER-QA
       corntab:
-        starttime: 0 01 00 ? * * *
-        stoptime: 0 59 23 ? * * *
+        starttime: 0 0,10,20,30,40,50 * * * ? *
+        stoptime: 0 9,19,29,39,49,59 * * * ? *
         
 scheduler:
    route:

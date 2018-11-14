@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster.dozar.converters;
+package com.oup.integration.sps.acad.startitle.dozar.converters;
 
 import java.text.DateFormat;
 import java.text.ParseException;

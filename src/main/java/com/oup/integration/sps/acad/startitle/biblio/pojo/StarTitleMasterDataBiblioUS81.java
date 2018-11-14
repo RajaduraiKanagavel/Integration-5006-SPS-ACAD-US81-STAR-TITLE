@@ -1,19 +1,15 @@
 
-package com.oup.integration.sps.acad.titlemaster.star.pojo;
+package com.oup.integration.sps.acad.startitle.biblio.pojo;
 
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.camel.dataformat.bindy.annotation.CsvRecord;
-import org.apache.camel.dataformat.bindy.annotation.DataField;
-
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
-@CsvRecord(separator=",")
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
 "productISBN",
@@ -21,8 +17,6 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "fullTitle",
 "subTitle",
 "editionNumber",
-"editionNumber2",
-"editionNumber3",
 "noOfVolumes",
 "newInPaperbackFlag",
 "formatDescription",
@@ -50,7 +44,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "productRelationCode",
 "memberOfOnlineProductCode"
 })
-public class StarTitleMasterDataUS81 {
+public class StarTitleMasterDataBiblioUS81 {
 
 /**
 * Product ISBN
@@ -58,7 +52,6 @@ public class StarTitleMasterDataUS81 {
 * 
 * 
 */
-@DataField(pos=1, trim=true)
 @JsonProperty("productISBN")
 private String productISBN = "";
 /**
@@ -67,7 +60,6 @@ private String productISBN = "";
 * 
 * 
 */
-@DataField(pos=2, trim=true)
 @JsonProperty("statusLevel")
 private Double statusLevel;
 /**
@@ -76,7 +68,6 @@ private Double statusLevel;
 * 
 * 
 */
-@DataField(pos=3, trim=true)
 @JsonProperty("fullTitle")
 private String fullTitle = "";
 /**
@@ -85,7 +76,6 @@ private String fullTitle = "";
 * 
 * 
 */
-@DataField(pos=4, trim=true)
 @JsonProperty("subTitle")
 private String subTitle = "";
 /**
@@ -94,27 +84,14 @@ private String subTitle = "";
 * 
 * 
 */
-@DataField(pos=5, trim=true)
 @JsonProperty("editionNumber")
 private String editionNumber;
-
-@DataField(pos=6, trim=true)
-@JsonProperty("editionNumber2")
-private String editionNumber2;
-
-@DataField(pos=7, trim=true)
-@JsonProperty("editionNumber3")
-private String editionNumber3;
-
-
-
 /**
 * noOfVolumes
 * <p>
 * 
 * 
 */
-@DataField(pos=8, trim=true)
 @JsonProperty("noOfVolumes")
 private Double noOfVolumes;
 /**
@@ -123,7 +100,6 @@ private Double noOfVolumes;
 * 
 * 
 */
-@DataField(pos=9, trim=true)
 @JsonProperty("newInPaperbackFlag")
 private String newInPaperbackFlag;
 /**
@@ -132,7 +108,6 @@ private String newInPaperbackFlag;
 * 
 * 
 */
-@DataField(pos=10, trim=true)
 @JsonProperty("formatDescription")
 private String formatDescription = "";
 /**
@@ -141,7 +116,6 @@ private String formatDescription = "";
 * 
 * 
 */
-@DataField(pos=11, trim=true)
 @JsonProperty("oxfordSubjectCode")
 private String oxfordSubjectCode = "";
 /**
@@ -150,7 +124,6 @@ private String oxfordSubjectCode = "";
 * 
 * 
 */
-@DataField(pos=12, trim=true)
 @JsonProperty("referenceSubject")
 private String referenceSubject = "";
 /**
@@ -159,7 +132,6 @@ private String referenceSubject = "";
 * 
 * 
 */
-@DataField(pos=13, trim=true)
 @JsonProperty("additionalReferenceSubject")
 private String additionalReferenceSubject = "";
 /**
@@ -168,7 +140,6 @@ private String additionalReferenceSubject = "";
 * 
 * 
 */
-@DataField(pos=14, trim=true)
 @JsonProperty("onlineProductSubjectCode")
 private String onlineProductSubjectCode = "";
 /**
@@ -177,7 +148,6 @@ private String onlineProductSubjectCode = "";
 * 
 * 
 */
-@DataField(pos=15, trim=true)
 @JsonProperty("onlineProductSubjectDescription")
 private String onlineProductSubjectDescription = "";
 /**
@@ -186,7 +156,6 @@ private String onlineProductSubjectDescription = "";
 * 
 * 
 */
-@DataField(pos=16, trim=true)
 @JsonProperty("audienceCode")
 private String audienceCode = "";
 /**
@@ -195,7 +164,6 @@ private String audienceCode = "";
 * 
 * 
 */
-@DataField(pos=17, trim=true)
 @JsonProperty("audienceDescription")
 private String audienceDescription = "";
 /**
@@ -204,7 +172,6 @@ private String audienceDescription = "";
 * 
 * 
 */
-@DataField(pos=18, trim=true)
 @JsonProperty("editorName")
 private String editorName = "";
 /**
@@ -213,7 +180,6 @@ private String editorName = "";
 * 
 * 
 */
-@DataField(pos=19, trim=true)
 @JsonProperty("printRun")
 private Double printRun;
 /**
@@ -222,7 +188,6 @@ private Double printRun;
 * 
 * 
 */
-@DataField(pos=20, trim=true)
 @JsonProperty("authorBigraphy")
 private String authorBigraphy = "";
 /**
@@ -231,7 +196,6 @@ private String authorBigraphy = "";
 * 
 * 
 */
-@DataField(pos=21, trim=true)
 @JsonProperty("copyrightYear")
 private Double copyrightYear;
 /**
@@ -240,7 +204,6 @@ private Double copyrightYear;
 * 
 * 
 */
-@DataField(pos=22, trim=true)
 @JsonProperty("seriesCode")
 private String seriesCode = "";
 /**
@@ -249,7 +212,6 @@ private String seriesCode = "";
 * 
 * 
 */
-@DataField(pos=23, trim=true)
 @JsonProperty("seriesName")
 private String seriesName = "";
 /**
@@ -258,7 +220,6 @@ private String seriesName = "";
 * 
 * 
 */
-@DataField(pos=24, trim=true)
 @JsonProperty("readyForPDBMAIN")
 private String readyForPDBMAIN;
 /**
@@ -267,7 +228,6 @@ private String readyForPDBMAIN;
 * 
 * 
 */
-@DataField(pos=25, trim=true)
 @JsonProperty("previousEditionPubDate1")
 private String previousEditionPubDate1 = "";
 /**
@@ -276,7 +236,6 @@ private String previousEditionPubDate1 = "";
 * 
 * 
 */
-@DataField(pos=26, trim=true)
 @JsonProperty("previousEditionPubDate2")
 private String previousEditionPubDate2 = "";
 /**
@@ -285,7 +244,6 @@ private String previousEditionPubDate2 = "";
 * 
 * 
 */
-@DataField(pos=27, trim=true)
 @JsonProperty("previousEditionPubDate3")
 private String previousEditionPubDate3 = "";
 /**
@@ -294,7 +252,6 @@ private String previousEditionPubDate3 = "";
 * 
 * 
 */
-@DataField(pos=28, trim=true)
 @JsonProperty("institutionalAccess")
 private String institutionalAccess = "";
 /**
@@ -303,7 +260,6 @@ private String institutionalAccess = "";
 * 
 * 
 */
-@DataField(pos=29, trim=true)
 @JsonProperty("retailMarketApproval")
 private String retailMarketApproval;
 /**
@@ -312,7 +268,6 @@ private String retailMarketApproval;
 * 
 * 
 */
-@DataField(pos=30, trim=true)
 @JsonProperty("previewOrSearch")
 private String previewOrSearch;
 /**
@@ -321,7 +276,6 @@ private String previewOrSearch;
 * 
 * 
 */
-@DataField(pos=31, trim=true)
 @JsonProperty("workID")
 private String workID = "";
 /**
@@ -330,7 +284,6 @@ private String workID = "";
 * 
 * 
 */
-@DataField(pos=32, trim=true)
 @JsonProperty("productRelationCode")
 private String productRelationCode = "";
 /**
@@ -339,7 +292,6 @@ private String productRelationCode = "";
 * 
 * 
 */
-@DataField(pos=33, trim=true)
 @JsonProperty("memberOfOnlineProductCode")
 private String memberOfOnlineProductCode = "";
 @JsonIgnore
@@ -454,25 +406,6 @@ return editionNumber;
 public void setEditionNumber(String editionNumber) {
 this.editionNumber = editionNumber;
 }
-
-@JsonProperty("editionNumber2")
-public String getEditionNumber2() {
-	return editionNumber2;
-}
-@JsonProperty("editionNumber2")
-public void setEditionNumber2(String editionNumber2) {
-	this.editionNumber2 = editionNumber2;
-}
-@JsonProperty("editionNumber3")
-public String getEditionNumber3() {
-	return editionNumber3;
-}
-@JsonProperty("editionNumber3")
-public void setEditionNumber3(String editionNumber3) {
-	this.editionNumber3 = editionNumber3;
-}
-
-
 
 /**
 * noOfVolumes
@@ -1055,5 +988,59 @@ return this.additionalProperties;
 public void setAdditionalProperty(String name, Object value) {
 this.additionalProperties.put(name, value);
 }
+
+public StarTitleMasterDataBiblioUS81(
+		)
+{
+	super();
+	
+}; 
+
+public StarTitleMasterDataBiblioUS81(String productISBN, Double statusLevel, String fullTitle, String subTitle,
+		String editionNumber, Double noOfVolumes, String newInPaperbackFlag, String formatDescription,
+		String oxfordSubjectCode, String referenceSubject, String additionalReferenceSubject,
+		String onlineProductSubjectCode, String onlineProductSubjectDescription, String audienceCode,
+		String audienceDescription, String editorName, Double printRun, String authorBigraphy, Double copyrightYear,
+		String seriesCode, String seriesName, String readyForPDBMAIN, String previousEditionPubDate1,
+		String previousEditionPubDate2, String previousEditionPubDate3, String institutionalAccess,
+		String retailMarketApproval, String previewOrSearch, String workID, String productRelationCode,
+		String memberOfOnlineProductCode) {
+	super();
+	this.productISBN = productISBN;
+	this.statusLevel = statusLevel;
+	this.fullTitle = fullTitle;
+	this.subTitle = subTitle;
+	this.editionNumber = editionNumber;
+	this.noOfVolumes = noOfVolumes;
+	this.newInPaperbackFlag = newInPaperbackFlag;
+	this.formatDescription = formatDescription;
+	this.oxfordSubjectCode = oxfordSubjectCode;
+	this.referenceSubject = referenceSubject;
+	this.additionalReferenceSubject = additionalReferenceSubject;
+	this.onlineProductSubjectCode = onlineProductSubjectCode;
+	this.onlineProductSubjectDescription = onlineProductSubjectDescription;
+	this.audienceCode = audienceCode;
+	this.audienceDescription = audienceDescription;
+	this.editorName = editorName;
+	this.printRun = printRun;
+	this.authorBigraphy = authorBigraphy;
+	this.copyrightYear = copyrightYear;
+	this.seriesCode = seriesCode;
+	this.seriesName = seriesName;
+	this.readyForPDBMAIN = readyForPDBMAIN;
+	this.previousEditionPubDate1 = previousEditionPubDate1;
+	this.previousEditionPubDate2 = previousEditionPubDate2;
+	this.previousEditionPubDate3 = previousEditionPubDate3;
+	this.institutionalAccess = institutionalAccess;
+	this.retailMarketApproval = retailMarketApproval;
+	this.previewOrSearch = previewOrSearch;
+	this.workID = workID;
+	this.productRelationCode = productRelationCode;
+	this.memberOfOnlineProductCode = memberOfOnlineProductCode;
+	
+}
+
+
+
 
 }

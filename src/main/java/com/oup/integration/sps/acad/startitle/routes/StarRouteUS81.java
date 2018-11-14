@@ -1,4 +1,4 @@
-package com.oup.integration.sps.acad.titlemaster.routes;
+package com.oup.integration.sps.acad.startitle.routes;
 
 import org.apache.camel.LoggingLevel;
 import org.apache.camel.builder.RouteBuilder;
@@ -19,7 +19,7 @@ public class StarRouteUS81 extends RouteBuilder {
 		from("activemq:{{activemq.us.queuename}}")
 		.routeId("StarRouteUS81")
 		.autoStartup(autoStartup)
-		/*.routePolicyRef("startPolicyUS")*/
+		.routePolicyRef("startPolicyUS")
 		.log(LoggingLevel.INFO, "com.oup.sps", "Adding UK SAPTitle Message--- ${body}")
 		.aggregate(new BiblioAggregationStrategy())
 		.constant(true)
@@ -37,7 +37,7 @@ public class StarRouteUS81 extends RouteBuilder {
 				.convertBodyTo(String.class)
 				.to("file:{{file.backup.location}}/Error?fileName=${date:now:yyyy/MM/dd/}$simple{header.InterfaceName}_$simple{header.RequestReceivedTime}.json&fileExist=Append")
 			.otherwise()					
-				.to("direct:ReceivedStarTitleAggregatedMessage")
+				.to("seda:ReceivedStarTitleAggregatedMessage")
 		.end();
 		
 	}
