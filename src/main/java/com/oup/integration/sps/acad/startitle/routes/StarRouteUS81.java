@@ -20,7 +20,7 @@ public class StarRouteUS81 extends RouteBuilder {
 		.routeId("StarRouteUS81")
 		.autoStartup(autoStartup)
 		.routePolicyRef("startPolicyUS")
-		.log(LoggingLevel.INFO, "com.oup.sps", "Adding UK SAPTitle Message--- ${body}")
+		.log(LoggingLevel.INFO, "com.oup.sps", "Adding US SAPTitle Message--- ${body}")
 		.aggregate(new BiblioAggregationStrategy())
 		.constant(true)
 		.completionTimeout(30000)

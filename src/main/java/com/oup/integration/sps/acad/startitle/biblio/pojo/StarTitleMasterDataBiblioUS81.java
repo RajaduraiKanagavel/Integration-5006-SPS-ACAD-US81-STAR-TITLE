@@ -85,7 +85,7 @@ private String subTitle = "";
 * 
 */
 @JsonProperty("editionNumber")
-private String editionNumber;
+private Integer editionNumber;
 /**
 * noOfVolumes
 * <p>
@@ -392,7 +392,7 @@ this.subTitle = subTitle;
 * 
 */
 @JsonProperty("editionNumber")
-public String getEditionNumber() {
+public Integer getEditionNumber() {
 return editionNumber;
 }
 
@@ -403,7 +403,7 @@ return editionNumber;
 * 
 */
 @JsonProperty("editionNumber")
-public void setEditionNumber(String editionNumber) {
+public void setEditionNumber(Integer editionNumber) {
 this.editionNumber = editionNumber;
 }
 
@@ -997,7 +997,7 @@ public StarTitleMasterDataBiblioUS81(
 }; 
 
 public StarTitleMasterDataBiblioUS81(String productISBN, Double statusLevel, String fullTitle, String subTitle,
-		String editionNumber, Double noOfVolumes, String newInPaperbackFlag, String formatDescription,
+		Integer editionNumber, Double noOfVolumes, String newInPaperbackFlag, String formatDescription,
 		String oxfordSubjectCode, String referenceSubject, String additionalReferenceSubject,
 		String onlineProductSubjectCode, String onlineProductSubjectDescription, String audienceCode,
 		String audienceDescription, String editorName, Double printRun, String authorBigraphy, Double copyrightYear,

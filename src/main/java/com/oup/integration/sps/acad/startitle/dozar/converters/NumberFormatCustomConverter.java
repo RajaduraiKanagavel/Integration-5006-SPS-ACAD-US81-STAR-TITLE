@@ -23,18 +23,18 @@ public class NumberFormatCustomConverter {
 
 	}
 
-	public String wordOrdinal(String input) {
+	public String wordOrdinal(Integer input) {
 
-		if (StringUtils.isBlank(input)) {
+		if (input.intValue() < 0) {
 			return "a";
 		} else {
 
 			RuleBasedNumberFormat enFormatter = new RuleBasedNumberFormat(Locale.ENGLISH,
 					RuleBasedNumberFormat.SPELLOUT);
 
-			System.out.println("The Input Number is  :::  " + Integer.parseInt(input));
+			//System.out.println("The Input Number is  :::  " + Integer.parseInt(input));
 
-			String word = enFormatter.format(Integer.parseInt(input), "%spellout-ordinal");
+			String word = enFormatter.format(input, "%spellout-ordinal");
 
 			word = toUppercase(word);
 			if ((word.contains("-") || word.contains(" "))) {
@@ -47,22 +47,24 @@ public class NumberFormatCustomConverter {
 		}
 	}
 
-	public String digitOrdinal(String input) {
+	public String digitOrdinal(Integer input) {
 
-		if (StringUtils.isBlank(input)) {
+		if (input.intValue()<0) {
 			return "a";
 		} else {
 
 			RuleBasedNumberFormat enFormatter2 = new RuleBasedNumberFormat(Locale.ENGLISH,
 					RuleBasedNumberFormat.ORDINAL);
 
-			return enFormatter2.format(Integer.parseInt(input), "%digits-ordinal") + " Ed";
+			return enFormatter2.format(input, "%digits-ordinal") + " Ed";
 		}
 	}
 
-	public String appendPrefix(String input) {
+	public String appendPrefix(Integer input) {
 
-		if (StringUtils.isBlank(input)) {
+		String input2=input+"";
+		
+		if (StringUtils.isBlank(input2.trim())) {
 			return "n";
 		} else {
 
